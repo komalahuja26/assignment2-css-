@@ -1,0 +1,97 @@
+
+/* Here we target the whole document and apply the flexbox to it*/
+#mainbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    width: fit-content;
+
+}
+/* Only the header is edited ffrom here onwards*/
+header{
+    flex-grow: 3;
+    margin-right: 30%;
+    margin-left: 2.5%;
+}
+header>h1{
+    color: orange;
+    font-family:'Times new Roman', sans-serif;
+    font-size: 750%;
+    margin-left: 25%;
+}
+/* Here we target the main and apply the flexn=box to it*/
+main{
+    display: flex;
+    gap: 125px;
+    flex-flow: row wrap;
+
+}
+/* Here we target the flex-items and appply the the order and border properties*/
+main > :first-child{
+    order: 2;
+}
+main > :nth-child(2){
+    order: 1;    
+}
+
+#boxA > :first-child{
+    border-top: 40px solid darkcyan;
+}
+#boxA > :nth-child(2){
+    border-top: 40px solid maroon;
+}
+#boxA > :nth-child(3){
+    border-top: 40px solid darkblue;
+}
+#boxA > :first-child  h3{
+    color: darkcyan;
+}
+#boxA > :nth-child(2)  h3{
+    color: maroon;
+}
+#boxA > :nth-child(3)  h3{
+    color: darkblue;
+}
+
+/* Here we change only */
+section+h2{
+    font-size: 250%;
+}
+/* Here we make the left side of the page (specifically targetting the image and the text part over that image*/
+#boxB > :first-child{
+    background-image: url("redhead.jpeg");
+    position:absolute;
+    height: 800px;
+    font-size: 180%;
+    color:honeydew;
+    margin-left: 0.8%;
+}
+/* Here we target the textbox with the shadow and orange border */ 
+#boxB > :nth-child(2){
+    border: 5px solid orange;
+    box-shadow: 2px 2px 30px black;
+    width: 400px;
+    margin-left: 10%;
+    margin-top:250%;
+}
+/* We target the */
+#boxB > :first-child p{
+    margin-top: 170%;
+    font-weight: 250%;
+}
+
+/* We target the text in the left side and make it vertical*/
+figcaption > :nth-child(2){
+    margin-left: -450px;
+    transform: rotate(90deg);
+    color:black;
+}
+/* Footer is edited here*/
+footer{
+    margin-left: 85%;
+}
+/* The p element inside the header is targeted here*/
+header > p{
+    font-size: 150%;
+    left: 0%;
+}
